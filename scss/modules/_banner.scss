@@ -1,0 +1,106 @@
+.banner-wrapper {
+	background-image: url("images/banner-image-1.jpg");
+	width: 100%;
+	height: 20em;
+	display: block;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+
+	.banner-overlay {
+		background-image: url('images/lines.svg');
+		background-color: rgba(0,0,0,0.2);
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+	}
+
+	.banner-inner {
+		padding: .5em 1em;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		
+		.banner-heading {
+			span {
+				@include kanit;
+				@include font-shadow;
+				font-weight: 800;
+				color: $wht;
+				font-size: 3em;
+				text-transform: uppercase;
+				letter-spacing: 1.5px;
+			}
+		}
+
+		.banner-subheading {
+
+			span {
+				@include roboto;
+				@include font-shadow;
+				font-weight: 400;
+				color: $wht;
+				text-transform: uppercase;
+			}	
+		}
+
+		.banner-devider {
+			margin: 1em 0;
+			width: 50%;
+			height: 2px;
+			background-image:linear-gradient(90deg, $wht 30%, rgba(0,0,0,0));
+			display: block;
+		}
+
+		.banner-image {
+			width: 50%;
+			display: block;
+
+			img {
+				width: 100%;
+				display: block;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width : 40em) {
+}
+@media only screen and (min-width : 60em) {
+	.banner-wrapper {
+		height: 23em;
+
+		.banner-inner {
+			padding: 2em;
+
+			.banner-heading {
+				span {
+					font-size: 4.5em;
+				}
+			}
+
+			.banner-subheading {
+				span {
+					font-size: 1.5em;
+				}
+			}
+
+			.banner-image {
+				width: 30%;
+			}
+
+			.banner-devider {
+				margin: 1.5em 0;
+			}
+		}
+	}
+}
+@media only screen and (min-width : 80em) {
+	.banner-wrapper {
+		height: 30em;
+
+		.banner-inner {
+			padding: 0 6em;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+$bs-blue: #001639;
+$bs-yel: #F5E316;
+$bs-lightblue: #234092;
+$wht: #fff;
+$blk: #000;
+
+@mixin roboto {
+	font-family: 'Roboto', sans-serif;
+}
+
+@mixin kanit {
+	font-family: 'Kanit', sans-serif;
+}
+
+@mixin font-shadow {
+	text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
