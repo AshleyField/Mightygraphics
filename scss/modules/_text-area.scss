@@ -1,0 +1,22 @@
+.text-area {
+    margin: 2em;
+
+    &-inner {
+        .text-area-top {
+            text-align: center;
+            margin: 3em 0;
+        }
+
+        .col-3 {
+            .about-item {
+
+                margin: 2em 0;
+
+                h3 {
+                    font-size: 2em;
+                    width: 4.9em;
+                }
+            }
+        }
+    }
+}

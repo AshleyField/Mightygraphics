@@ -10,8 +10,9 @@ $blk: #000;
 
 @mixin kanit {
 	font-family: 'Kanit', sans-serif;
+	font-weight: 800;
 }
 
 @mixin font-shadow {
-	text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+	text-shadow: 0 2px 5px rgba(0,0,0,1);
 }
