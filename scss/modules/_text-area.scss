@@ -2,6 +2,8 @@
     margin: 2em;
 
     &-inner {
+        margin: 0 0 5em 0;
+
         .text-area-top {
             text-align: center;
             margin: 3em 0;
@@ -16,6 +18,51 @@
                     font-size: 2em;
                     width: 4.9em;
                 }
+            }
+        }
+    }
+}
+
+.mobile-first {
+    margin: 5em 2em;
+    &-inner {
+        .left {
+            h2 {
+                text-align: center;
+                margin: 0 0 2em 0;
+            }
+            p {
+                text-align: center;
+            }
+
+            .mobile-first-infographic {
+                display: flex;
+                margin: 2em 0;
+
+                .icon {
+                    flex: 0 0 10%;
+
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+
+                p {
+                    text-align: left;
+                    margin: 0 0 0 2em;
+                }
+            }
+        }
+
+        .right {
+
+            height: 25em;
+            overflow: hidden;
+            
+            img {
+                display: block;
+                width: 100%;
             }
         }
     }
