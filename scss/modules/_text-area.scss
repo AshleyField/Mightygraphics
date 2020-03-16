@@ -11,33 +11,14 @@
 
         .col-3 {
             .about-item {
-
+                text-align: center;
                 margin: 2em 0;
 
                 h3 {
                     font-size: 2em;
                     width: 4.9em;
-                }
+                    margin: 0 auto;
 
-                .about-icon-title {
-                    display: flex;
-                    
-                    h3 {
-                        flex: 0 0 30%;
-                    }
-
-                    .icon {
-                        flex: 0 0 10%;
-                        align-self: center;
-                        margin-left: 1em;
-                        border-left: 1px black solid;
-                        padding-left: 1em;
-
-                        img {
-                            width: 100%;
-                            display: block;
-                        }
-                    }
                 }
             }
         }
