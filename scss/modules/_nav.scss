@@ -69,3 +69,55 @@
 
 	}
 }
+
+@media only screen and (min-width : 60em) {
+	.mobile-header {
+		display: none;
+	}
+
+	.desktop-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1em 3em;
+
+		.logo {
+			flex: 0 0 20%;
+
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		nav {
+			flex: 0 0 35%;
+
+			ul {
+				list-style-type: none;
+				display: flex;
+				justify-content: space-around;
+				margin: 0;
+				padding: 0;
+
+				li {
+					flex: 0 0 20%;
+					text-align: center;
+
+					a {
+						font-size: 1.1em;
+						text-decoration: none;
+						text-transform: uppercase;
+						color: $blk;
+						@include roboto;
+					}
+
+					.active {
+						color: $mg-med-blue;
+						font-weight: 800;
+					}
+				}
+			}
+		}
+	}
+}

@@ -87,3 +87,47 @@
         }
     }
 }
+
+@media only screen and (min-width : 40em) {
+    .display-grid {
+        margin: 3em;
+    }
+}
+
+@media only screen and (min-width : 40em) {
+    .display-grid {
+        margin: 5em 10%;
+
+        &-inner {
+            .row {
+                display: flex;
+
+                .column {
+                    .image-container {
+                        box-shadow: none;
+                        margin: .4em;
+
+                        img {
+                            margin: 0;
+
+                        }
+
+                        .image-overlay {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .second {
+                .image-container {
+                    height: 15em;
+                    overflow: hidden;
+
+                    img {
+                    }
+                }
+            }
+        }
+    }
+}

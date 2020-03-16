@@ -3,7 +3,7 @@
 	height: 15em;
 	background-position: center;
 	background-size: cover;
-	position: relative;;
+	position: relative;
 
 	&-inner {
 		position: absolute;
@@ -42,5 +42,30 @@
 				box-shadow: 0 2px 6px rgba(0,0,0,0.8);
 			}
 		}
+	}
+}
+
+@media only screen and (min-width : 40em) {
+	.banner {
+		height: 20em;
+
+		&-inner {
+			.callout {
+				width: 100%;
+				h1 {
+					font-size: 3em;
+				}
+			}
+
+			.button {
+				width: 15em;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width : 60em) {
+	.banner {
+		height: 30em;
 	}
 }
