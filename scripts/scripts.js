@@ -20,5 +20,4 @@ $(document).ready(function(){
         $('.sidenav').data('state', 'closed');
     });
 
-
 });

@@ -85,7 +85,10 @@
 
 @media only screen and (min-width : 60em) {
     .text-area {
-        margin: 5em 12%;
+        
+        margin: 5em auto;
+        width: 80%;
+        max-width: 80em;
         &-inner {
 
             .text-area-top {
@@ -114,7 +117,10 @@
 
     .mobile-first {
 
-        margin: 5em 12%;
+        
+        margin: 5em auto;
+        width: 80%;
+        max-width: 80em;
 
         &-inner {
             display: flex;
