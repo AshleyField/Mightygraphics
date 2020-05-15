@@ -12,12 +12,12 @@
             .image-container {
 
                 position: relative;
-                box-shadow: 0 -3px 15px rgba(0,0,0,0.2);
+                margin: .5em;
 
                 img {
                     width: 100%;
                     display: block;
-                    margin: 2em 0;
+                    box-shadow: 0 -3px 15px rgba(0,0,0,0.2);
                 }
 
                 .image-overlay {
@@ -70,15 +70,89 @@
                 }
 
                 .video-overlay {
-                    background-color: $grn;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    margin: 0 auto;
 
-                    .link {
-                        a {
-                            color: darken($grn, 30%);
+                    
+                    .title {
+                        color: $wht;
+                        line-height: 2.5em;
+                        @include kanit;
+                        text-transform: uppercase;
+                        text-align: center;
+                        letter-spacing: 1.5px;
+                        text-shadow: 0 0 9px rgba(0,0,0,0.9);
+                        font-size: 2em;
+                        flex: 1 0 90%;
+                        line-height: 1em;
+                        margin-bottom: .5em;
+
+                        h4 {
+                            width: 80%;
+                            text-align: center;
+                            margin: 0 auto;
                         }
                     }
+
+                    .link {
+                        flex: 1 0 90%;
+                        align-self: center;
+
+                        a {
+                            img {
+                                width: 5em;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+
+
                 }
 
+            }
+        }
+
+        .view-all-work-btn {
+
+            transition: .3s ease all;
+            padding-bottom: 1em;
+
+            .icon {
+                float: right;
+                fill: $mg-dark-blue;
+
+                svg {
+                    display: block;
+                    width: 1.25em;
+                    margin-left: .5em;
+                    transition: .3s ease fill;
+                }
+            }
+
+            a {
+                float: right;
+                color: $mg-dark-blue;
+                text-decoration: none;
+                margin: 0;
+                padding: 0;
+                line-height: 1.25em;
+                transition: .3s ease color;
+            }
+
+            &:hover #svg-arrow {
+                fill: $mg-blue;
+            }
+
+            &:hover #view-all-port {
+                color: $mg-blue;
             }
         }
     }
@@ -154,12 +228,26 @@
                         
                     }
 
+                    .video-overlay {
+                        opacity: 0;
+                        transition: .5s ease all;
+                        background-color: rgba(0,22,56,0.8);
+
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+
                     &:hover {
                         .image-overlay {
                             opacity: 1;
                         }
                     }
                 }
+            }
+
+            .view-all-work-btn {
+                margin-top: 1.5em;
             }
         }
     }
