@@ -67,5 +67,27 @@
 @media only screen and (min-width : 60em) {
 	.banner {
 		height: 30em;
+
+		&-inner {
+			width: 40em;
+
+			.callout {
+				h1 {
+					font-size: 4em;
+				}
+			}
+			.button {
+				width: 20em;
+
+				a {
+					transition: .5s ease all;
+					font-size: 1.25em;
+
+					&:hover {
+						background-color: $mg-blue;
+					}
+				}
+			}
+		}
 	}
 }
