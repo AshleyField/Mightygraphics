@@ -74,3 +74,10 @@ html {
 		}
 	}
 }
+
+::selection {
+	background: lighten($mg-blue,45%); /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+	background: lighten($mg-blue,45%); /* Gecko Browsers */
+  }
